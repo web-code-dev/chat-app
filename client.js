@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (userList && position === "right") {
         const userElement = document.createElement("div");
         userElement.innerText = message.split(" ")[0]; 
+        const audio = new Audio('iphone.mp3');
+        audio.play();
         userElement.classList.add("user");
         userList.prepend(userElement); 
     }
